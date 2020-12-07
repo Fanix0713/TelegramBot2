@@ -17,4 +17,4 @@ async def send_to_admin(dp):
 @dp.message_handler(commands=['start'])
 async def send_welcome(message: types.Message):
         keyboard_markup.add(*(types.KeyboardButton(text) for text in array_keyboard))
-        await message.answer(text='Hello', reply_markup=keyboard_markup)
+        await message.answer(text='Привет,как у тебя дела?', reply_markup=keyboard_markup)
